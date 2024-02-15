@@ -1,0 +1,39 @@
+.money_chart_section {
+    background-image: linear-gradient(to top right, #2A2A2A, #34545E);
+    padding: 3rem 0;
+}
+
+.money_chart_section_container {
+    text-align: center;
+    color: white;
+
+    >h2 {
+        margin-top: 2rem;
+    }
+
+    >p {
+        color: #D9D9D9;
+        margin: 2rem 0;
+    }
+
+    .btn {
+        background: var(--primary-color);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 4px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    @media screen and (max-width: 500px) {
+        br{
+            display: none;
+        }
+        .img{
+            max-width: 252px !important;
+            width: 100% !important;
+        }
+        >p{
+            font-size: 14px;
+        }
+    }
+}
