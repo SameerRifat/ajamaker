@@ -1,0 +1,134 @@
+.card {
+    position: absolute;
+    background-color: white;
+    padding: 0.6rem;
+    box-shadow: var(--shadow-lg);
+    border-radius: 6px;
+}
+
+.right_card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    small {
+        font-size: 8px;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        >span {
+            font-size: 10px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    }
+}
+
+.hero_right_card {
+    top: 31%;
+    left: 85%;
+
+    @media screen and (max-width: 410px) {
+        left: 60%;
+    }
+
+    @media screen and (max-width: 290px) {
+        left: 40%;
+    }
+}
+
+.getStarted_right_card {
+    bottom: 8%;
+    left: 85%;
+
+    @media screen and (max-width: 370px) {
+        left: 70%;
+    }
+    @media screen and (max-width: 330px) {
+        display: none;
+    }
+}
+
+.left_card {
+
+    .transaction_history {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            >div {
+                display: flex;
+                gap: 2rem;
+                justify-content: space-between;
+                width: 100%;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    :nth-child(1) {
+                        font-weight: 600;
+                    }
+                }
+
+                span {
+                    font-size: 8px;
+                    white-space: nowrap;
+                }
+
+                @media screen and (max-width: 410px) {
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.hero_left_card {
+    top: 33%;
+    right: 64%;
+    z-index: -10;
+
+    @media screen and (max-width: 410px) {
+        right: 50%;
+    }
+
+    @media screen and (max-width: 330px) {
+        right: 30%;
+    }
+
+    @media screen and (max-width: 290px) {
+        right: 10%;
+    }
+}
+
+.getStarted_left_card {
+    top: 20%;
+    right: 90%;
+
+    @media screen and (max-width: 490px) {
+        right: 70%;
+    }
+
+    @media screen and (max-width: 430px) {
+        right: 60%;
+    }
+    @media screen and (max-width: 350px) {
+        right: 50%;
+    }
+    @media screen and (max-width: 330px) {
+        display: none;
+    }
+}

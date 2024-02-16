@@ -1,0 +1,177 @@
+.hero_container {
+    position: relative;
+
+    .hero_banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 1.5rem;
+        height: 100%;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.hero_sub_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+.hero_left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
+
+    .intro_card {
+        background: #f1f3fe;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0.5rem 1rem;
+        color: var(--secondary-color);
+        font-weight: 600;
+        font-size: 14px;
+        width: fit-content;
+        border-radius: 6px;
+    }
+
+    .hero_heading {
+        font-size: 2rem;
+
+        .secondary_color {
+            color: var(--secondary-color);
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 305px) {
+        .intro_card{
+            font-size: 12px;
+        }
+        .hero_heading{
+            font-size: 1.7rem;
+        }
+    }
+    @media screen and (max-width: 270px) {
+        .intro_card{
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width: 370px) {
+    .hero_description br{
+        display: none;
+    }
+}
+
+.hero_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_wrapper {
+    position: relative;
+    background-color: white;
+    @media screen and (max-width: 435px) {
+        width: 100px;
+        >img{
+            width: 100%;
+        }
+    }
+}
+
+.card {
+    position: absolute;
+    background-color: white;
+    padding: 0.6rem;
+    box-shadow: var(--shadow-lg);
+    border-radius: 6px;
+}
+
+.right_card {
+    top: 31%;
+    left: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    small {
+        font-size: 8px;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        >span {
+            font-size: 10px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    }
+}
+
+.left_card {
+    top: 33%;
+    right: 64%;
+    z-index: -10;
+
+    .transaction_history {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                justify-content: space-between;
+                width: 100%;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    :nth-child(1) {
+                        font-weight: 600;
+                    }
+                }
+
+                span {
+                    font-size: 8px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
