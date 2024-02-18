@@ -3,14 +3,15 @@ import styles from './Footer.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import FooterLinks from './FooterLinks/FooterLinks'
+import Iconify from "../iconify/iconify";
 
 const Footer = () => {
     const socialLinks = [
-        { logo: '/linkedin.png', href: '/www.linkedin.com' },
-        { logo: '/twitter.png', href: '/www.twitter.com' },
-        { logo: '/facebook.png', href: '/www.facebook.com' },
-        { logo: '/youtube.png', href: '/www.youtube.com' },
-        { logo: '/instagram.png', href: '/www.instagram.com' },
+        { icon: "ri:linkedin-box-fill", href: '/www.linkedin.com' },
+        { icon: "ri:twitter-x-fill", href: '/www.twitter.com' },
+        { icon: "ri:facebook-circle-fill", href: '/www.facebook.com' },
+        { icon: "ri:youtube-fill", href: '/www.youtube.com' },
+        { icon: "ri:instagram-fill", href: '/www.instagram.com' },
     ];
     return (
         <footer className={styles.footer}>
@@ -41,20 +42,18 @@ const Footer = () => {
                     </p>
                     <div className={styles.social_links}>
                         {socialLinks.map((link, index) => (
-                            <Link href={link.href} key={index}>
-                                <Image
-                                    src={link.logo}
-                                    alt='logo'
-                                    width={40}
-                                    height={40}
-                                    quality={95}
+                            <Link href={link.href} key={index}  className={styles.social_link}>
+                                <Iconify
+                                    icon={link.icon}
+                                    color="#fff"
+                                    width={20}
                                 />
                             </Link>
                         ))}
                     </div>
                 </div>
 
-                <div className={styles.divider}/>
+                <div className={styles.divider} />
             </div>
         </footer>
     )

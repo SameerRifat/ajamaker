@@ -8,7 +8,7 @@ const FeaturesSection = () => {
   return (
     <section className={`container ${styles.features_container}`}>
       <h2 className="section_heading_black">
-        What you can expect
+        What you can expect {" "}
         <br />
         from our features
       </h2>

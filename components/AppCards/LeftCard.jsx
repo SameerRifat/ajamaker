@@ -19,7 +19,7 @@ const LeftCard = ({ hero = false }) => {
               <span className="typoCaption">Food Expense</span>
               <span className="typoBody2">22 Mar, 2023</span>
             </div>
-            <span>-$30</span>
+            <span className={styles.price}>-$30</span>
           </div>
         </div>
         <div className={styles.row}>
@@ -29,7 +29,7 @@ const LeftCard = ({ hero = false }) => {
               <span className="typoCaption">Spotify Subscription</span>
               <span className="typoBody2">20 Mar, 2023</span>
             </div>
-            <span>-$100</span>
+            <span className={styles.price}>-$100</span>
           </div>
         </div>
       </div>

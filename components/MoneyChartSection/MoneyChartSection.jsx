@@ -31,9 +31,6 @@ const MoneyChartSection = () => {
         <Link href="#" className="primary_btn">
           Get Ajamaker
         </Link>
-        {/* <Link href='#' className={styles.btn}>
-          Get Ajamaker
-        </Link> */}
       </div>
     </section>
   );

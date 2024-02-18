@@ -15,17 +15,16 @@ const HeroSection = () => {
             <span>The leading finance applications</span>
           </div>
           <h1 className={cx(styles.hero_heading, "typoH2")}>
-            A better way to
+            A better way to{" "}
             <br />
-            manage your
+            manage your {" "}
             <br />
             <span className={styles.secondary_color}>
               money
-              <Image
-                width={150}
-                height={10}
+              <img
                 src="/hero-underline.png"
                 alt="underline"
+                style={{width: '100%', height: 10}}
               />
             </span>
           </h1>

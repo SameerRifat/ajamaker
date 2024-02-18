@@ -1,3 +1,6 @@
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   --max-width: 1200px;
 
@@ -22,12 +25,16 @@
   -webkit-font-smoothing: antialiased !important;
   font-feature-settings: "clig" off, "liga" off;
 }
+body{
+  font-family: 'inter', sans-serif;
+}
 
 .container {
   width: 90%;
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+  /* border: 2px solid red; */
 }
 
 a {
@@ -52,16 +59,16 @@ ul {
     }
   }
 
-  @media screen and (max-width: 300px) {
+  /* @media screen and (max-width: 300px) {
     font-size: 20px;
-  }
+  } */
 }
 
 .section_heading_white {
   font-size: 1.5rem;
   color: var(--white);
   text-align: center;
-  font-weight:200;
+  font-weight: 600;
 
   @media screen and (max-width: 500px) {
     /* font-size: 20px; */
@@ -71,8 +78,8 @@ ul {
     }
   }
 
-  @media screen and (max-width: 300px) {
-    font-size: 18px;
+  @media screen and (max-width: 360px) {
+    font-size: 20px;
   }
 }
 

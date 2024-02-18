@@ -15,9 +15,11 @@
 
     .ellipse_large {
         overflow: hidden;
+        width: 920px;
 
         img {
             width: 100%;
+            height: auto;
         }
     }
 
@@ -27,9 +29,11 @@
         bottom: -3px;
         transform: translate(-50%, 0);
         overflow: hidden;
+        width: 450px;
 
         img {
             width: 100%;
+            height: auto;
         }
     }
 }
@@ -90,6 +94,9 @@
         color: white;
         font-weight: 500;
         cursor: pointer;
+        &:hover{
+            background: #060f1f;
+        }
     }
 }
 
@@ -102,6 +109,11 @@
 
 .app_img {
     position: relative;
+    width: 260px;
+    >img{
+        width: 100%;
+        height: auto;
+    }
 
     .left_card {
         position: absolute;
@@ -110,65 +122,52 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 930px) {
     .bg_images_container {
-        min-height: 420px;
+        min-height: 500px;
 
         .ellipse_large {
+            width: auto;
+            height: auto;
+        }
+        .ellipse_small {
+            width: 400px;
+        }
+    }
+}
+@media screen and (max-width: 930px) {
+    .bg_images_container {
+        .ellipse_small {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .bg_images_container{
+        min-height: 450px;
+    }
+    .app_img {
+        width: 220px;
+
+        >img {
             width: 100%;
-            height: 100%;
         }
     }
 }
 
 @media screen and (max-width: 550px) {
     .bg_images_container{
-        min-height: 400px;
-    }
-    .get_started_form{
-        margin-bottom: 1rem;
+        min-height: 430px;
     }
     .app_img {
-        width: 170px;
-
-        >img {
-            width: 100%;
-        }
+        width: 200px;
     }
 }
-
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 515px) {
     .bg_images_container{
-        min-height: 380px;
-    }
-    .app_img {
-        width: 150px;
-
-        >img {
-            width: 100%;
-        }
-    }
-}
-@media screen and (max-width: 500px) {
-    .bg_images_container{
-        min-height: 350px;
-    }
-}
-@media screen and (max-width: 440px) {
-    .bg_images_container{
-        min-height: 380px;
-    }
-}
-@media screen and (max-width: 350px) {
-    .bg_images_container{
-        min-height: 350px;
-    }
-    .app_img {
-        width: 120px;
-
-        >img {
-            width: 100%;
-        }
+        min-height: 460px;
     }
 }
 
@@ -184,12 +183,16 @@
 
 @media screen and (max-width: 329px) {
     .bg_images_container {
-        min-height: 370px;
+        min-height: 430px;
     }
 
     .get_started_content {
         >h2 {
             margin-top: 1.5rem;
+            font-size: 18px;
         }
+    }
+    .app_img {
+        width: 170px;
     }
 }

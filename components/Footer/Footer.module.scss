@@ -12,6 +12,7 @@
 .company_info > p{
     margin-top: 1rem;
     white-space: nowrap;
+    line-height: 1.7;
 }
 
 .footer_row2{
@@ -26,12 +27,22 @@
     .copy_right{
         color: #CBCBCB;
         font-size: 14px;
+        line-height: 1.7;
     }
     .social_links{
         display: flex;
         align-items: center;
         gap: 1rem;
         flex-wrap: wrap;
+        .social_link{
+            width: 40px;
+            height: 40px;
+            background-color: #323232;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 

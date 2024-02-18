@@ -13,13 +13,13 @@ const TestimonialsSection = () => {
         <div className={styles.testimonial_cards}>
           {TestimonialsData.map((testimonial, ind) => (
             <div className={styles.testimonial_card} key={ind}>
-              <Image
-                src="/testimonial-logo.png"
-                alt="logo"
-                width={40}
-                height={40}
-                quality={95}
-              />
+              <span className={styles.comment_icon}>
+                <Iconify
+                  icon="iconamoon:comment-dots-light"
+                  color="#5891FF"
+                  width={20}
+                />
+              </span>
               <p className={cx("typoBody2", styles.comment)}>
                 “{testimonial.comment}”
               </p>
@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
               <div className={styles.divider} />
               <div className={styles.customer}>
                 <Image
-                  src="/avatar.png"
+                  src="/avatar2.png"
                   alt="logo"
                   width={60}
                   height={60}

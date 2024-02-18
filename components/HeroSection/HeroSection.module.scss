@@ -11,7 +11,7 @@
     padding-bottom: 5rem;
 
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1300px) {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 2rem 0;
@@ -57,6 +57,17 @@
         color: var(--text)
     }
 
+    @media screen and (max-width: 1300px) {
+        justify-content: center;
+        align-items: center;
+        .hero_heading{
+            text-align: center;
+        }
+        .hero_description{
+            text-align: center;
+        }
+    }
+
     @media screen and (max-width: 305px) {
         .intro_card {
             font-size: 12px;
@@ -67,10 +78,15 @@
         .intro_card {
             font-size: 10px;
         }
+        .hero_heading{
+            br{
+                display: none;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 420px) {
     .hero_description br {
         display: none;
     }
@@ -86,12 +102,16 @@
     position: relative;
     padding-top: 2rem;
 
-    @media screen and (max-width: 435px) {
-        width: 100px;
+    @media screen and (max-width: 630px) {
+        width: 200px;
 
         >img {
             width: 100%;
+            height: auto;
         }
+    }
+    @media screen and (max-width: 600px) {
+        width: 170px;
     }
 }
 

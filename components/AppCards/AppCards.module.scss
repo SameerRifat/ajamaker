@@ -29,6 +29,12 @@
             white-space: nowrap;
         }
     }
+
+    @media screen and (max-width: 550px) {
+        >div>span {
+            font-size: 1rem;
+        }
+    }
 }
 
 .hero_right_card {
@@ -36,12 +42,15 @@
     left: 85%;
     z-index: 20;
 
-    @media screen and (max-width: 410px) {
-        left: 60%;
+    @media screen and (max-width: 660px) {
+        left: 75%;
     }
 
-    @media screen and (max-width: 290px) {
-        left: 40%;
+    @media screen and (max-width: 580px) {
+        left: 65%;
+    }
+    @media screen and (max-width: 500px) {
+        display: none;
     }
 }
 
@@ -49,11 +58,14 @@
     bottom: 8%;
     left: 85%;
 
-    @media screen and (max-width: 370px) {
-        left: 70%;
+    @media screen and (max-width: 670px) {
+        left: 75%;
     }
 
     @media screen and (max-width: 330px) {
+        display: none;
+    }
+    @media screen and (max-width: 590px) {
         display: none;
     }
 }
@@ -78,6 +90,11 @@
                 justify-content: space-between;
                 width: 100%;
 
+                .price {
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                }
+
                 >div {
                     display: flex;
                     flex-direction: column;
@@ -85,13 +102,13 @@
 
                     :nth-child(1) {
                         font-weight: 600;
+                        white-space: nowrap;
                     }
 
                     :nth-child(2) {
                         font-size: 0.6rem;
                     }
                 }
-
 
                 @media screen and (max-width: 410px) {
                     gap: 0.5rem;
@@ -103,19 +120,23 @@
 
 .hero_left_card {
     top: 33%;
-    right: 85%;
+    right: 68%;
     z-index: 0;
 
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 630px) {
+        right: 60%;
+    }
+
+    @media screen and (max-width: 580px) {
         right: 50%;
     }
 
-    @media screen and (max-width: 330px) {
-        right: 30%;
+    @media screen and (max-width: 540px) {
+        right: 40%;
     }
 
-    @media screen and (max-width: 290px) {
-        right: 10%;
+    @media screen and (max-width: 500px) {
+        display: none;
     }
 }
 
@@ -123,19 +144,17 @@
     top: 20%;
     right: 90%;
 
-    @media screen and (max-width: 490px) {
+    @media screen and (max-width: 760px) {
+        right: 80%;
+    }
+    @media screen and (max-width: 710px) {
         right: 70%;
     }
-
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 670px) {
         right: 60%;
     }
 
-    @media screen and (max-width: 350px) {
-        right: 50%;
-    }
-
-    @media screen and (max-width: 330px) {
+    @media screen and (max-width: 590px) {
         display: none;
     }
 }

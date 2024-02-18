@@ -27,7 +27,7 @@ const GetStartedSection = () => {
                     <br />
                     money more wisely than before
                 </h2>
-                <form className={styles.get_started_form}>
+                <form className={`container ${styles.get_started_form}`}>
                     <input
                         type="text"
                         placeholder='Enter Your Email'
@@ -39,7 +39,7 @@ const GetStartedSection = () => {
                 <div className={styles.app_wrapper}>
                     <div className={styles.app_img}>
                         <img
-                            src='/app.png'
+                            src='/app2.png'
                             alt='background'
                         />
                         <RightCard />
