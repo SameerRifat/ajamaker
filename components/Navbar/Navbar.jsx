@@ -24,12 +24,12 @@ const Navbar = () => {
             // height={"35px"}
           />
         </div>
-        <Link href='/'>
-          <Image
+        <Link href='/' className={styles.logo}>
+          <img
             src='/logo.png'
             alt='logo'
-            width={79}
-            height={50}
+            // width={79}
+            // height={50}
           />
         </Link>
         <div className={styles.navlinks}>
