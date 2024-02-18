@@ -1,19 +1,21 @@
 .card {
     position: absolute;
     background-color: white;
-    padding: 0.6rem;
-    box-shadow: var(--shadow-lg);
+    padding: 1rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 6px;
+
+    small {
+        font-size: 12px;
+        font-weight: 500;
+    }
 }
 
 .right_card {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
-    small {
-        font-size: 8px;
-    }
+    color: var(--black);
 
     >div {
         display: flex;
@@ -22,8 +24,8 @@
         gap: 1.5rem;
 
         >span {
-            font-size: 10px;
-            font-weight: 500;
+            font-size: 1.3rem;
+            font-weight: 600;
             white-space: nowrap;
         }
     }
@@ -32,6 +34,7 @@
 .hero_right_card {
     top: 31%;
     left: 85%;
+    z-index: 20;
 
     @media screen and (max-width: 410px) {
         left: 60%;
@@ -49,18 +52,20 @@
     @media screen and (max-width: 370px) {
         left: 70%;
     }
+
     @media screen and (max-width: 330px) {
         display: none;
     }
 }
 
 .left_card {
+    background: white;
 
     .transaction_history {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 1rem;
 
         .row {
             display: flex;
@@ -81,12 +86,12 @@
                     :nth-child(1) {
                         font-weight: 600;
                     }
+
+                    :nth-child(2) {
+                        font-size: 0.6rem;
+                    }
                 }
 
-                span {
-                    font-size: 8px;
-                    white-space: nowrap;
-                }
 
                 @media screen and (max-width: 410px) {
                     gap: 0.5rem;
@@ -98,8 +103,8 @@
 
 .hero_left_card {
     top: 33%;
-    right: 64%;
-    z-index: -10;
+    right: 85%;
+    z-index: 0;
 
     @media screen and (max-width: 410px) {
         right: 50%;
@@ -125,9 +130,11 @@
     @media screen and (max-width: 430px) {
         right: 60%;
     }
+
     @media screen and (max-width: 350px) {
         right: 50%;
     }
+
     @media screen and (max-width: 330px) {
         display: none;
     }

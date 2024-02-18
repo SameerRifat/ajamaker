@@ -20,16 +20,14 @@ const Navbar = () => {
           <Icon
             icon="basil:menu-outline"
             color='#a3a3a3'
-            // width={"28px"}
-            // height={"35px"}
           />
         </div>
         <Link href='/'>
           <Image
             src='/logo.png'
             alt='logo'
-            width={79}
-            height={50}
+            width={110}
+            height={72}
           />
         </Link>
         <div className={styles.navlinks}>
@@ -42,7 +40,7 @@ const Navbar = () => {
             )
           })}
         </div>
-        <Link href='/docs' className={styles.docs_btn}>
+        <Link href='/docs' className={'primary_btn'}>
           Docs
         </Link>
       </nav>

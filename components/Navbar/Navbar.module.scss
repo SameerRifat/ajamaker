@@ -1,29 +1,21 @@
 .navbar{
-    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .navlinks{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 .navlink{
     color: var(--secondary-text);
+    font-weight: 500;
 }
 .navlink.active{
     color: var(--secondary-color);
-}
-.docs_btn{
-    background: var(--primary-color);
-    color: white;
-    width: 80px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
 }
 .menu_icon{
     display: none;
